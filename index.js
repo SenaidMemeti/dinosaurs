@@ -25,7 +25,7 @@ app.use(express.static('public'))
 
 const dinoNameResponse = await fetchApi.json();
 console.log(dinoNameResponse);
-response.json(dinoNameResponse);
+response.json(JSON.stringify(dinoNameResponse));
 }
 
 
