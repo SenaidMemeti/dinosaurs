@@ -23,7 +23,7 @@ app.use(express.static('public'))
 }
 );
 
-const dinoNameResponse = await fetchApi.json();
+const dinoNameResponse = await fetchApi();
 console.log(dinoNameResponse);
 response.json(dinoNameResponse);
 }
