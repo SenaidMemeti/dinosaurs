@@ -1,7 +1,7 @@
 console.log('script.js loaded');
 
 document.querySelector('#btnload').addEventListener('click', () => { 
-    JSON.stringify(getDinoName());
+    getDinoName();
     getDinoImage();
 });
 
