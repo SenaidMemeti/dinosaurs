@@ -25,7 +25,7 @@ app.use(express.static('public'))
 
 const dinoNameResponse = await fetchApi.json();
 console.log(dinoNameResponse);
-response.json(JSON.stringify(dinoNameResponse));
+response.json(dinoNameResponse);
 }
 
 
@@ -44,9 +44,9 @@ app.get('/dinoimage', async(request, response) => {
 }
 );
 
-const dinoImageResponse = await fetchApi.json();
+const dinoImageResponse = await fetchApi();
 console.log(dinoImageResponse);
-response.json(JSON.stringify(dinoImageResponse));
+response.json(dinoImageResponse);
 }
 
 
