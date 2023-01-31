@@ -4,13 +4,9 @@ if ( process.env.NODE_ENV !== 'production'){
 
 var express = require('express');
 var app = express();
-const port = 5005;
-
 app.use(express.static('public'))
 
-app.listen(port, () => {
-    console.log(`Example app listening on port ${port}`)
-  });
+
 
     const api_key = process.env.API_KEY;
 
