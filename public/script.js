@@ -10,7 +10,7 @@ async function getDinoName(){
     const data = await response.json();
     let dinoName = data.join(' ');
     console.log(dinoName);
-    document.querySelector('#dinoName').textContent = dinoName;
+    document.querySelector('#dinoName').textContent = JSON.stringify(dinoName);
 }
 
 async function getDinoImage(){
