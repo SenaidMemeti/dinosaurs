@@ -4,7 +4,7 @@ document.querySelector('#btnload').addEventListener('click', () => {
 });
 
 async function getDinoName(){
-    const response = await fetch(JSON.parse('/dinoname'));
+    const response = await fetch('/dinoname');
     const data = await response.json();
     let dinoName = data.join(' ');
     console.log(dinoName);
