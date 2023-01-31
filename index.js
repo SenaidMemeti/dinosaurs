@@ -27,7 +27,7 @@ app.listen(port, () => {
 }
 );
 
-const dinoNameResponse = await fetchApi.json();
+const JSON.stringify(dinoNameResponse) = await fetchApi.json();
 console.log(dinoNameResponse);
 response.json(dinoNameResponse);
 }
