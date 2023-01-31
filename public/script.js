@@ -1,12 +1,10 @@
-console.log('script.js loaded');
-
 document.querySelector('#btnload').addEventListener('click', () => { 
     getDinoName();
     getDinoImage();
 });
 
 async function getDinoName(){
-    const response = await fetch('/dinoname');
+    const response = await fetch(JSON.parse('/dinoname'));
     const data = await response.json();
     let dinoName = data.join(' ');
     console.log(dinoName);
