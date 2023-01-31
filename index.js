@@ -46,7 +46,7 @@ app.get('/dinoimage', async(request, response) => {
 
 const dinoImageResponse = await fetchApi.json();
 console.log(dinoImageResponse);
-response.json(dinoImageResponse);
+response.json(JSON.stringify(dinoImageResponse));
 }
 
 
