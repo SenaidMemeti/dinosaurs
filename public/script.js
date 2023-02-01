@@ -4,7 +4,7 @@ document.querySelector('#btnload').addEventListener('click', () => {
 });
 
 async function getDinoName(){
-    const response = await fetch('https://dinosaurs-phi.vercel.app/dinoname');
+    const response = await fetch('/dinoname');
     const data = await response.json();
     let dinoName = data.join(' ');
     console.log(dinoName);
@@ -12,7 +12,7 @@ async function getDinoName(){
 }
 
 async function getDinoImage(){
-    const response = await fetch('https://dinosaurs-phi.vercel.app/dinoimage');
+    const response = await fetch('/dinoimage');
     const data = await response.json();
     let dinoImage = data.value[Math.floor(Math.random() * data.value.length)];
     let dinoImageUrl = dinoImage.thumbnailUrl;
